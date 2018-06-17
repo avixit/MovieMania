@@ -1,0 +1,74 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "movie mania",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "cancel"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "help"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "stop"
+                    ]
+                },
+                {
+                    "name": "movieDetailsIntent",
+                    "slots": [
+                        {
+                            "name": "movieNameWordOne",
+                            "type": "myslot"
+                        },
+                        {
+                            "name": "movieNameWordTwo",
+                            "type": "myslot"
+                        },
+                        {
+                            "name": "movieNameWordThree",
+                            "type": "myslot"
+                        },
+                        {
+                            "name": "movieNameWordFour",
+                            "type": "myslot"
+                        },
+                        {
+                            "name": "movieNameWordFive",
+                            "type": "myslot"
+                        },
+                        {
+                            "name": "movieNameWordSix",
+                            "type": "myslot"
+                        }
+                    ],
+                    "samples": [
+                        "{movieNameWordOne}",
+                        "for {movieNameWordOne} {movieNameWordTwo} {movieNameWordThree} {movieNameWordFour} {movieNameWordFive} {movieNameWordSix}",
+                        "about {movieNameWordOne} {movieNameWordTwo} {movieNameWordThree} {movieNameWordFour} {movieNameWordFive} {movieNameWordSix}",
+                        "tell me about {movieNameWordOne} {movieNameWordTwo} {movieNameWordThree} {movieNameWordFour} {movieNameWordFive} {movieNameWordSix}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "myslot",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "mname"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
